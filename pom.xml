@@ -25,14 +25,23 @@
 	<repositories>
 		<!-- dea artifactory: -->		
 		<repository>
-			<id>dea-artifactory</id>
-			<name>dea-artifactory-releases</name>
-			<url>https://dbis-halvar.uibk.ac.at/artifactory/libs-release/</url>
+			<id>central</id>
+			<name>Maven Repository Switchboard</name>
+			<layout>default</layout>
+			<url>https://repo1.maven.org/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 		<repository>
 			<id>swt-repo</id>
 			<url>https://swt-repo.googlecode.com/svn/repo/</url>
 		</repository>		
+		<repository>
+			<id>dea-artifactory</id>
+			<name>dea-artifactory-releases</name>
+			<url>https://dbis-halvar.uibk.ac.at/artifactory/libs-release/</url>
+		</repository>
 <!-- 		<repository> -->
 <!-- 			<id>com.springsource.repository.bundles.external</id> -->
 <!-- 			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name> -->
